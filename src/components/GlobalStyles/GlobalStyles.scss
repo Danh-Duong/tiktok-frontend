@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 :root {
     --primary: #fe2c55;
+    --white: #fff;
+    --black: #000;
+    --text-color: #333;
 
     // Default Layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
+    color: var(--text-color);
 }
 * {
     margin: 0;
@@ -20,4 +24,15 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed; // tối ưu tốc độ load font
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
